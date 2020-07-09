@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Jack : Adventure time</title>
+<style type="text/css">
+	body {
+  background: #f9c029;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100vw;
+  margin: 0px;
+}
+.face {
+  width: 30rem;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content:center;
+}
+.eyes {
+  width: 80%;
+  display: flex;
+  justify-content: space-between;
+}
+.eye {
+  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  background: white;
+  box-shadow: inset 6px -10px 0px 20px black;
+}
+
+.nose{
+  background: black;
+  width: 5rem;
+  height: 4rem;
+  border-radius: 50%;
+  position:relative;
+  margin: auto;
+  z-index: 2;
+  top: 15%;
+}
+.mustache
+{
+  background: #f9c029;
+  border-bottom: 4px black solid ;
+  width: 10rem;
+  height: 8.5rem;
+  margin: auto;
+  position: relative;
+  top: -3.8rem;
+  border-radius: 50%;
+  z-index: 1;
+ 
+}
+.nose-section
+
+{
+background: #f9c029;
+  border-top: 4px black solid ;
+   border-left: 4px black solid ;
+     border-right: 4px black solid ;
+	position:relative;
+	width: 16.5rem;
+	height: 15.2rem;
+	top: -5.7rem;
+	  border-radius: 50%;
+
+	 animation-duration: 5s;
+animation-name: rotate;
+  animation-iteration-count: infinite;
+
+}
+.mustache-part-1
+{
+  background: #f9c029;
+  border-bottom: 4px black solid ;
+    border-left: 4px black solid ;
+  width: 40%;
+  height: 70%;
+  margin: auto;
+  position: relative;
+  top: -68%;
+  left: -30%;
+  border-radius: 50%;
+ 
+}
+.mustache-part-2
+{
+  background: #f9c029;
+  border-bottom: 4px black solid ;
+    border-right: 4px black solid ;
+  width: 40%;
+  height: 70%;
+  margin: auto;
+  position: relative;
+  top: -136.5%;
+  right: -30%;
+  border-radius: 50%;
+ transform: rotate(10deg);
+ 
+}
+    @keyframes rotate
+    {   10% {
+       transform: rotate(20deg);
+      }
+      20% {
+    transform: rotate(-20deg);
+      }
+       30% {
+       transform: rotate(20deg);
+      }
+      40% {
+    transform: rotate(-20deg);
+      }
+
+    }
+</style>
+</head>
+<body>
+<div class="face">
+  <div class="eyes">
+    <div class="eye"> </div>
+    <div class="eye" > </div>
+  </div>
+  <div class="nose-section"> 
+  <div class="nose"></div>
+  <div class="mustache"></div>
+   <div class="mustache-part-1"></div>
+      <div class="mustache-part-2"></div>
+      </div>
+
+</div>
+</body>
+</html>
